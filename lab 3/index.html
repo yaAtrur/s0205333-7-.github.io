@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Галерея изображений</h1>
+    <div class="gallery">
+        <!-- Общий контейнер для галереи и стрелок -->
+        <button class="arrow" id="prev" aria-label="Назад">
+            &#9664;  <!--(специальный код символа), которая отображает стрелку влево: ◀-->
+        </button> 
+        <!-- Добавил кнопку для переключения назад -->
+
+        <div class="slider">
+            <!-- Контейнер, который скрывает лишние изображения -->
+
+            <div class="slider-track" id="sliderTrack">
+                <!-- В этом блоке находятся все изображения галереи -->
+
+                <img src="images/photo1.jpg" alt="Картинка 1">
+                <img src="images/photo2.jpg" alt="Картинка 2">
+                <img src="images/photo3.jpg" alt="Картинка 3">
+                <img src="images/photo4.jpg" alt="Картинка 4">
+                <img src="images/photo5.jpg" alt="Картинка 5">
+                <img src="images/photo6.jpg" alt="Картинка 6">
+                <img src="images/photo7.jpg" alt="Картинка 7">
+                <img src="images/photo8.jpg" alt="Картинка 8">
+                <!-- Добавил 8 изображений из папки images -->
+
+            </div>
+        </div>
+
+        <button class="arrow" id="next" aria-label="Вперёд">
+            &#9654; 
+        </button>
+        <!-- Добавил кнопку для переключения вперёд -->
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+    <!-- Здесь JavaScript создаёт точки для переключения страниц -->
+
+    <script src="script.js"></script>
+</body>
+</html>
